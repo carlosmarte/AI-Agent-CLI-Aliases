@@ -4,7 +4,20 @@ This document contains a collection of optimized terminal aliases for Claude Cod
 
 ## How to use these aliases
 
-Add these lines to your shell configuration file (e.g., `~/.zshrc`, `~/.bashrc`, or `~/.bash_aliases`). After saving the file, run `source ~/.zshrc` (or the equivalent for your shell) to activate them.
+These are terminal aliases. On macOS, install them as a standalone file under `/Users/Shared/LDE/cli-aliases/` and load that directory from `~/.zshrc`, so every tool's aliases live in one shared place and stay out of your dotfiles.
+
+**Install location (macOS):** `/Users/Shared/LDE/cli-aliases/claude-code.sh`
+
+Copy the alias blocks from this guide into that file, then add one loader line to `~/.zshrc` that sources everything in the directory:
+
+```bash
+# ~/.zshrc
+for f in /Users/Shared/LDE/cli-aliases/*.sh; do [ -r "$f" ] && source "$f"; done
+```
+
+After saving, run `source ~/.zshrc` to activate the aliases in the current shell. On Linux or with bash, use the same directory layout and put the loader line in `~/.bashrc` instead.
+
+> **Prompt before writing.** Whether a person or an AI agent is following this guide, do not create or overwrite `/Users/Shared/LDE/cli-aliases/claude-code.sh`, and do not add or change the loader line in `~/.zshrc`, without first showing the user the exact path and the exact content that will be written and getting their explicit confirmation. If `/Users/Shared/LDE/cli-aliases/` does not exist yet, ask before creating it as well.
 
 ---
 
