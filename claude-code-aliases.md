@@ -18,9 +18,9 @@ alias cldy="~/.local/bin/claude --permission-mode bypassPermissions"
 alias cldyc="~/.local/bin/claude --permission-mode bypassPermissions --continue"
 alias cld="~/.local/bin/claude -d"
 
-# Autonomous execution modes using custom system prompts
-alias fabley="~/.local/bin/claude --permission-mode bypassPermissions --system-prompt-file ~/.agents/prompts/claude/fable-autonomous_execution_mode.md"
-alias fablec="~/.local/bin/claude --permission-mode bypassPermissions --system-prompt-file ~/.agents/prompts/claude/fable-autonomous_execution_mode.md --continue"
+# Fable model sessions (bypass permissions, optionally continuing the last session)
+alias fabley="~/.local/bin/claude --model fable --permission-mode bypassPermissions"
+alias fablec="~/.local/bin/claude --model fable --permission-mode bypassPermissions --continue"
 ```
 
 ---
