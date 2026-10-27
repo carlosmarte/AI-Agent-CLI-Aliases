@@ -21,7 +21,6 @@ alias cld="~/.local/bin/claude -d"
 # Autonomous execution modes using custom system prompts
 alias fabley="~/.local/bin/claude --permission-mode bypassPermissions --system-prompt-file ~/.agents/prompts/claude/fable-autonomous_execution_mode.md"
 alias fablec="~/.local/bin/claude --permission-mode bypassPermissions --system-prompt-file ~/.agents/prompts/claude/fable-autonomous_execution_mode.md --continue"
-alias fable="~/.local/bin/claude --system-prompt-file ~/.agents/prompts/claude/fable-autonomous_execution_mode.md --continue"
 ```
 
 ---
